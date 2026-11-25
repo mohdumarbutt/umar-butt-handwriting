@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Umar Butt Handwriting — a handwritten font by Mohd Umar Butt. Preview, test, and use the font on your website." />
+  <meta name="author" content="Mohd Umar Butt" />
+  <title>Umar Butt Handwriting — Font Preview</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="./">
+      <span class="brand-mark">U</span>
+      <span>Umar Butt <small>Handwriting</small></span>
+    </a>
+    <nav>
+      <a href="#preview">Preview</a>
+      <a href="#glyphs">Characters</a>
+      <a href="#use">Use</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">HANDWRITING FONT · BY MOHD UMAR BUTT</div>
+      <h1>Write it like <span>you mean it.</span></h1>
+      <p>A clean handwritten typeface for notes, posters, educational projects, personal websites and creative interfaces.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#preview">Try the font</a>
+        <a class="btn secondary" href="./fonts/UmarButtHandwriting-Regular.woff2" download>Download WOFF2</a>
+      </div>
+      <div class="mini-meta">
+        <span>Regular</span><span>WOFF2</span><span>TTF</span><span>OFL 1.1</span>
+      </div>
+    </section>
+
+    <section id="preview" class="preview-section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">LIVE PREVIEW</div>
+          <h2>Type something.</h2>
+        </div>
+        <button id="copyCss" class="text-btn">Copy CSS</button>
+      </div>
+
+      <div class="preview-card">
+        <textarea id="previewText" spellcheck="false">Hello, this is Umar Butt Handwriting.</textarea>
+        <div class="controls">
+          <label>Size <input id="size" type="range" min="24" max="120" value="64" /></label>
+          <output id="sizeValue">64px</output>
+          <button id="reset" class="text-btn">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="glyphs" class="characters">
+      <div class="eyebrow">CHARACTER SET</div>
+      <h2>See the details.</h2>
+      <div class="glyph-grid" id="glyphGrid"></div>
+    </section>
+
+    <section id="use" class="use-section">
+      <div>
+        <div class="eyebrow">FOR DEVELOPERS</div>
+        <h2>Put it on your website.</h2>
+        <p>Load the WOFF2 file with <code>@font-face</code>, then use <code>font-family: "Umar Butt Handwriting"</code>.</p>
+      </div>
+      <div class="code-card">
+        <button id="copyCode" class="copy">Copy</button>
+        <pre><code id="code"></code></pre>
+      </div>
+    </section>
+
+    <section class="about">
+      <div>
+        <div class="eyebrow">ABOUT</div>
+        <h2>Umar Butt Handwriting</h2>
+        <p>Created by <strong>Mohd Umar Butt</strong>. Designed as a practical handwritten display font for digital notes, student work, creative websites and personal projects.</p>
+      </div>
+      <div class="facts">
+        <div><span>Designer</span><strong>Mohd Umar Butt</strong></div>
+        <div><span>Family</span><strong>Umar Butt Handwriting</strong></div>
+        <div><span>Style</span><strong>Regular</strong></div>
+        <div><span>License</span><strong>OFL 1.1</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Mohd Umar Butt</span>
+    <a href="./OFL-1.1-LICENSE.txt">License</a>
+    <a href="./README.md">Documentation</a>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

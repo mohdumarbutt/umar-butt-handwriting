@@ -1,0 +1,6 @@
+Copyright © 2026 Mohd Umar Butt.
+
+This font package is intended to use the SIL Open Font License, Version 1.1 (OFL-1.1),
+only where the underlying font rights permit this licensing arrangement.
+
+For the complete license text, see the OFL-1.1 license file distributed with the font.
