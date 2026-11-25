@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="ink">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentation — Umar Butt Handwriting</title>
+  <meta name="description" content="Install and use Umar Butt Handwriting via jsDelivr CDN or self-hosting. @font-face examples, framework guides (Next.js, Tailwind), desktop installation, performance tips and license FAQ.">
+  <meta name="author" content="Mohd Umar Butt">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="canonical" href="https://mohdumarbutt.github.io/umar-butt-handwriting/docs.html">
+  <meta property="og:title" content="Documentation — Umar Butt Handwriting">
+  <meta property="og:description" content="CDN quick start, self-hosting, framework guides and FAQ for the free handwriting font.">
+  <meta property="og:url" content="https://mohdumarbutt.github.io/umar-butt-handwriting/docs.html">
+  <meta property="og:image" content="https://raw.githubusercontent.com/mohdumarbutt/mohdumarbutt/main/banner.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d12'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%23c9a25e' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+  <script>(function(){try{var t=localStorage.getItem("ubh-theme");if(!t){t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"paper":"ink"}document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/UmarButtHandwriting-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="docs">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Umar Butt Handwriting — home">
+        <span class="brand-mark hand" aria-hidden="true">UB</span>
+        <span class="brand-name">Umar Butt <em>Handwriting</em></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="docs.html" class="active" aria-current="page">Docs</a>
+        <a href="developer.html">Developer</a>
+        <a href="support.html">Support</a>
+        <a href="license.html">License</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false"><svg class="icon" aria-hidden="true"><use id="theme-icon-use" href="#i-sun"/></svg></button>
+        <a class="btn btn-primary btn-sm header-download" href="fonts/UmarButtHandwriting-Regular.ttf" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Download</span></a>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Documentation</p>
+        <h1>From zero to handwritten.</h1>
+        <p class="lede">Everything you need to ship Umar Butt Handwriting in websites, apps and desktop documents — commercially, freely, legally.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container docs-layout">
+        <nav class="toc" aria-label="On this page">
+          <a href="#overview">Overview</a>
+          <a href="#files">Files &amp; endpoints</a>
+          <a href="#cdn">CDN quick start</a>
+          <a href="#self-host">Self-hosting</a>
+          <a href="#usage">Usage &amp; fallbacks</a>
+          <a href="#frameworks">Frameworks</a>
+          <a href="#desktop">Desktop install</a>
+          <a href="#performance">Performance</a>
+          <a href="#troubleshooting">Troubleshooting</a>
+          <a href="#license-faq">License FAQ</a>
+        </nav>
+
+        <div class="docs-body prose">
+
+          <section class="doc-section" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Umar Butt Handwriting</strong> is a single-style (Regular 400) handwriting typeface. It ships as <strong>WOFF2</strong> (web) and <strong>TTF</strong> (desktop / fallback), under the <a href="license.html">SIL OFL 1.1</a> — free for personal and commercial use, including embedding in websites, apps and documents.</p>
+          </section>
+
+          <section class="doc-section" id="files">
+            <h2>Files &amp; CDN endpoints</h2>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>File</th><th>Purpose</th><th>Copy</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td class="mono">fonts/UmarButtHandwriting-Regular.woff2</td>
+                    <td>Web font — all modern browsers</td>
+                    <td><button class="copy-btn" type="button" data-copy-text="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.woff2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>URL</span></button></td>
+                  </tr>
+                  <tr>
+                    <td class="mono">fonts/UmarButtHandwriting-Regular.ttf</td>
+                    <td>Desktop install, design tools, legacy fallback</td>
+                    <td><button class="copy-btn" type="button" data-copy-text="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.ttf"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>URL</span></button></td>
+                  </tr>
+                  <tr>
+                    <td class="mono">css/umar-butt-handwriting.css</td>
+                    <td>Ready-made <code class="inline-code">@font-face</code> + helper class</td>
+                    <td><button class="copy-btn" type="button" data-copy-text="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/css/umar-butt-handwriting.css"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>URL</span></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="doc-section" id="cdn">
+            <h2>CDN quick start (jsDelivr)</h2>
+            <p>Add one line to your <code class="inline-code">&lt;head&gt;</code> — no downloads, no build step:</p>
+            <div class="code">
+              <div class="code-head"><span class="code-title">HTML</span><button class="copy-btn" type="button" data-copy="#doc-cdn"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-cdn">&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/css/umar-butt-handwriting.css"&gt;</code></pre>
+            </div>
+            <p>Or declare the face yourself with direct CDN URLs:</p>
+            <div class="code">
+              <div class="code-head"><span class="code-title">CSS — @font-face via CDN</span><button class="copy-btn" type="button" data-copy="#doc-cdn-face"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-cdn-face">@font-face {
+  font-family: "Umar Butt Handwriting";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.ttf") format("truetype");
+}</code></pre>
+            </div>
+            <p><strong>Version pinning:</strong> <code class="inline-code">@main</code> tracks the default branch and is cached by jsDelivr. For production, pin a release tag — e.g. <code class="inline-code">@v1.0.0</code> — for immutable, long-cached assets. After pushing updates to <code class="inline-code">@main</code>, you can refresh the cache with the <a href="https://www.jsdelivr.com/tools/purge" target="_blank" rel="noopener">jsDelivr purge tool</a>.</p>
+          </section>
+
+          <section class="doc-section" id="self-host">
+            <h2>Self-hosting (recommended for strict privacy)</h2>
+            <p>Download the files (or copy the <code class="inline-code">fonts/</code> folder from the repo) into your project, then:</p>
+            <div class="code">
+              <div class="code-head"><span class="code-title">CSS — self-hosted @font-face</span><button class="copy-btn" type="button" data-copy="#doc-self"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-self">@font-face {
+  font-family: "Umar Butt Handwriting";
+  src: url("/fonts/UmarButtHandwriting-Regular.woff2") format("woff2"),
+       url("/fonts/UmarButtHandwriting-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}</code></pre>
+            </div>
+            <div class="code">
+              <div class="code-head"><span class="code-title">HTML — preload for faster first paint</span><button class="copy-btn" type="button" data-copy="#doc-preload"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-preload">&lt;link rel="preload" href="/fonts/UmarButtHandwriting-Regular.woff2"
+      as="font" type="font/woff2" crossorigin&gt;</code></pre>
+            </div>
+            <p>Self-hosting means <strong>zero third-party requests</strong> — ideal for GDPR-sensitive projects and offline apps. Keep the <code class="inline-code">LICENSE</code> file alongside the fonts when you redistribute them.</p>
+          </section>
+
+          <section class="doc-section" id="usage">
+            <h2>Usage &amp; fallbacks</h2>
+            <div class="code">
+              <div class="code-head"><span class="code-title">CSS</span><button class="copy-btn" type="button" data-copy="#doc-usage"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-usage">.handwriting {
+  font-family: "Umar Butt Handwriting", "Segoe Script", "Bradley Hand", cursive;
+  font-weight: 400;
+  font-synthesis: none; /* prevents ugly fake bold/italic */
+}</code></pre>
+            </div>
+            <ul>
+              <li>Only <strong>Regular 400</strong> exists — avoid requesting bold/italic weights.</li>
+              <li>Handwriting faces shine at <strong>display sizes (24px+)</strong>; use a readable body font for paragraphs.</li>
+              <li>The CDN stylesheet also provides ready-made classes: <code class="inline-code">.ub-handwriting</code> and <code class="inline-code">.umar-butt-handwriting</code>.</li>
+            </ul>
+          </section>
+
+          <section class="doc-section" id="frameworks">
+            <h2>Frameworks</h2>
+            <p><strong>Next.js</strong> — self-host with <code class="inline-code">next/font/local</code> for zero layout shift:</p>
+            <div class="code">
+              <div class="code-head"><span class="code-title">app/layout.tsx</span><button class="copy-btn" type="button" data-copy="#doc-next"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-next">import localFont from "next/font/local";
+
+const handwriting = localFont({
+  src: "../fonts/UmarButtHandwriting-Regular.woff2",
+  display: "swap",
+});
+
+// &lt;h1 className={handwriting.className}&gt;Hello!&lt;/h1&gt;</code></pre>
+            </div>
+            <p><strong>Tailwind CSS</strong> — register the family once, use <code class="inline-code">font-handwriting</code> everywhere:</p>
+            <div class="code">
+              <div class="code-head"><span class="code-title">tailwind.config.js</span><button class="copy-btn" type="button" data-copy="#doc-tw"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-tw">module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        handwriting: ['"Umar Butt Handwriting"', "cursive"],
+      },
+    },
+  },
+};</code></pre>
+            </div>
+            <p><strong>React / Vue / plain HTML</strong> — load the CDN stylesheet in your entry HTML (or import the CSS), then apply the family via class or inline style. Works in any stack that renders to the DOM.</p>
+          </section>
+
+          <section class="doc-section" id="desktop">
+            <h2>Desktop installation (TTF)</h2>
+            <ul>
+              <li><strong>Windows:</strong> right-click <code class="inline-code">UmarButtHandwriting-Regular.ttf</code> → <em>Install for all users</em>.</li>
+              <li><strong>macOS:</strong> double-click the TTF → <em>Install Font</em> (Font Book).</li>
+              <li><strong>Linux:</strong> copy the TTF to <code class="inline-code">~/.local/share/fonts/</code> and run <code class="inline-code">fc-cache -f</code>.</li>
+            </ul>
+            <p>Restart open apps afterwards. The font appears as <strong>“Umar Butt Handwriting”</strong> in Word, Figma, Photoshop, Canva (uploaded fonts) and similar tools.</p>
+          </section>
+
+          <section class="doc-section" id="performance">
+            <h2>Performance tips</h2>
+            <ul>
+              <li><strong>Preload</strong> the WOFF2 on pages where the font is above the fold.</li>
+              <li><strong>Keep <code class="inline-code">font-display: swap</code></strong> so text is never invisible.</li>
+              <li><strong>Pin a version tag</strong> on jsDelivr for permanent edge caching.</li>
+              <li><strong>Subset</strong> if you only need Basic Latin (requires <code class="inline-code">pip install fonttools brotli</code>):</li>
+            </ul>
+            <div class="code">
+              <div class="code-head"><span class="code-title">Terminal — optional subsetting</span><button class="copy-btn" type="button" data-copy="#doc-subset"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button></div>
+              <pre><code id="doc-subset">pyftsubset UmarButtHandwriting-Regular.ttf \
+  --unicodes="U+0020-007E" --flavor=woff2 \
+  --output-file=UmarButtHandwriting-basic.woff2</code></pre>
+            </div>
+          </section>
+
+          <section class="doc-section" id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <div class="faq">
+              <details><summary>The font doesn’t show up</summary><div class="faq-body">Check the Network tab for a 200 response on the font file, verify the family name is exactly <code class="inline-code">"Umar Butt Handwriting"</code>, and confirm you’re not requesting weight 700. On this site, the hero chip shows live font-load status.</div></details>
+              <details><summary>CORS error when loading from another domain</summary><div class="faq-body">jsDelivr serves fonts with <code class="inline-code">Access-Control-Allow-Origin: *</code>, so the CDN works everywhere. If you self-host on a separate asset domain, add that header there.</div></details>
+              <details><summary>jsDelivr serves an old version</summary><div class="faq-body">Branch refs like <code class="inline-code">@main</code> are cached. Purge the exact URL via the <a href="https://www.jsdelivr.com/tools/purge" target="_blank" rel="noopener">purge tool</a>, or switch to an immutable release tag.</div></details>
+              <details><summary>Brief flash of a different font</summary><div class="faq-body">That’s the expected <code class="inline-code">swap</code> behavior. Preloading the WOFF2 usually removes it entirely.</div></details>
+              <details><summary>Bold text looks strange</summary><div class="faq-body">Only Regular exists. Set <code class="inline-code">font-synthesis: none</code> to stop browsers from faking bold, and use size/color for emphasis instead.</div></details>
+            </div>
+          </section>
+
+          <section class="doc-section" id="license-faq">
+            <h2>License FAQ</h2>
+            <div class="faq">
+              <details><summary>Can I use it in a commercial product?</summary><div class="faq-body">Yes — websites, apps, SaaS, client work, logos, packaging, print, videos. No fees, no permission needed.</div></details>
+              <details><summary>Do I need to credit the author?</summary><div class="faq-body">Attribution is appreciated but not required for usage. If you redistribute the font files themselves, include the copyright notice and the OFL license text.</div></details>
+              <details><summary>Can I modify the font?</summary><div class="faq-body">Yes, under OFL 1.1 — but a Modified Version must be renamed, because “Umar Butt Handwriting” is a Reserved Font Name. Derivatives must also stay under OFL.</div></details>
+              <details><summary>Can I sell the font?</summary><div class="faq-body">Not by itself. You may bundle it with (and sell) software, themes or templates that include it, as long as the license travels along.</div></details>
+              <details><summary>Can I embed it in a PDF or app bundle?</summary><div class="faq-body">Yes. Documents created with the font are entirely yours and carry no license obligations.</div></details>
+            </div>
+            <p>Full details on the <a href="license.html">license page</a>.</p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-script hand">Umar Butt Handwriting</p>
+        <p class="muted">A free handwriting typeface by Mohd Umar Butt. Open-source under SIL OFL 1.1 — for websites, apps, print &amp; everything in between.</p>
+        <div class="socials">
+          <a class="icon-btn" href="https://github.com/mohdumarbutt" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="icon-btn" href="https://www.instagram.com/theumar_3x" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a class="icon-btn" href="https://www.facebook.com/MohdUmarButtOfficial" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/mohdumarbutt" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="icon-btn" href="https://www.youtube.com/@mohdumarbutt_official" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+          <a class="icon-btn" href="https://orcid.org/0009-0005-4495-314X" target="_blank" rel="noopener" aria-label="ORCID"><svg class="icon" aria-hidden="true"><use href="#i-orcid"/></svg></a>
+          <a class="icon-btn" href="https://buymeacoffee.com/umarbutt" target="_blank" rel="noopener" aria-label="Buy me a coffee"><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Project"><h4>Project</h4><a href="index.html">Home</a><a href="about.html">About the font</a><a href="docs.html">Documentation</a><a href="license.html">License</a></nav>
+      <nav class="footer-col" aria-label="Resources"><h4>Resources</h4><a href="https://github.com/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener">GitHub repository</a><a href="https://www.jsdelivr.com/package/gh/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener">jsDelivr package</a><a href="https://github.com/mohdumarbutt/umar-butt-handwriting/releases" target="_blank" rel="noopener">Releases</a><a href="https://github.com/mohdumarbutt/umar-butt-handwriting/issues" target="_blank" rel="noopener">Report an issue</a></nav>
+      <nav class="footer-col" aria-label="Connect"><h4>Connect</h4><a href="developer.html">Developer</a><a href="support.html">Support the project</a><a href="privacy.html">Privacy policy</a><a href="https://buymeacoffee.com/umarbutt" target="_blank" rel="noopener">Buy me a coffee</a></nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Mohd Umar Butt · Released under <a href="license.html">SIL OFL 1.1</a></span>
+      <span class="muted">Crafted with care · Deployed on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

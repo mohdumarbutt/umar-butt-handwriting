@@ -1,101 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="ink">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Umar Butt Handwriting — a handwritten font by Mohd Umar Butt. Preview, test, and use the font on your website." />
-  <meta name="author" content="Mohd Umar Butt" />
-  <title>Umar Butt Handwriting — Font Preview</title>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Umar Butt Handwriting — Free Handwriting Font by Mohd Umar Butt (OFL-1.1)</title>
+  <meta name="description" content="Umar Butt Handwriting is a free, open-source handwriting font by Mohd Umar Butt. WOFF2 + TTF, SIL OFL-1.1 licensed, commercial-use ready, delivered via jsDelivr CDN. Try the live preview.">
+  <meta name="keywords" content="Umar Butt Handwriting, handwriting font, free font, OFL font, open source font, web font, woff2, ttf, jsDelivr font CDN, Mohd Umar Butt, UmarButtHandwriting-Regular">
+  <meta name="author" content="Mohd Umar Butt">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="canonical" href="https://mohdumarbutt.github.io/umar-butt-handwriting/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Umar Butt Handwriting — Free Open-Source Handwriting Font">
+  <meta property="og:description" content="A warm, personal handwriting typeface. Free for commercial use (OFL-1.1). WOFF2 + TTF + jsDelivr CDN.">
+  <meta property="og:url" content="https://mohdumarbutt.github.io/umar-butt-handwriting/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/mohdumarbutt/mohdumarbutt/main/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d12'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%23c9a25e' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+  <script>(function(){try{var t=localStorage.getItem("ubh-theme");if(!t){t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"paper":"ink"}document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/UmarButtHandwriting-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Umar Butt Handwriting",
+    "alternateName": "UmarButtHandwriting-Regular",
+    "version": "1.0.0",
+    "author": {
+      "@type": "Person",
+      "name": "Mohd Umar Butt",
+      "url": "https://github.com/mohdumarbutt",
+      "sameAs": [
+        "https://www.instagram.com/theumar_3x",
+        "https://www.facebook.com/MohdUmarButtOfficial",
+        "https://www.linkedin.com/in/mohdumarbutt",
+        "https://www.youtube.com/@mohdumarbutt_official",
+        "https://orcid.org/0009-0005-4495-314X"
+      ]
+    },
+    "license": "https://opensource.org/licenses/OFL-1.1",
+    "url": "https://mohdumarbutt.github.io/umar-butt-handwriting/",
+    "downloadUrl": "https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.ttf",
+    "isAccessibleForFree": true,
+    "keywords": "handwriting font, free font, OFL-1.1, web font, woff2, ttf"
+  }
+  </script>
 </head>
-<body>
-  <header class="nav">
-    <a class="brand" href="./">
-      <span class="brand-mark">U</span>
-      <span>Umar Butt <small>Handwriting</small></span>
-    </a>
-    <nav>
-      <a href="#preview">Preview</a>
-      <a href="#glyphs">Characters</a>
-      <a href="#use">Use</a>
-      <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-    </nav>
+<body data-page="index">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Umar Butt Handwriting — home">
+        <span class="brand-mark hand" aria-hidden="true">UB</span>
+        <span class="brand-name">Umar Butt <em>Handwriting</em></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="docs.html">Docs</a>
+        <a href="developer.html">Developer</a>
+        <a href="support.html">Support</a>
+        <a href="license.html">License</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon" aria-hidden="true"><use id="theme-icon-use" href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm header-download" href="fonts/UmarButtHandwriting-Regular.ttf" download>
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Download</span>
+        </a>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
+
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="eyebrow">HANDWRITING FONT · BY MOHD UMAR BUTT</div>
-      <h1>Write it like <span>you mean it.</span></h1>
-      <p>A clean handwritten typeface for notes, posters, educational projects, personal websites and creative interfaces.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#preview">Try the font</a>
-        <a class="btn secondary" href="./fonts/UmarButtHandwriting-Regular.woff2" download>Download WOFF2</a>
-      </div>
-      <div class="mini-meta">
-        <span>Regular</span><span>WOFF2</span><span>TTF</span><span>OFL 1.1</span>
-      </div>
-    </section>
-
-    <section id="preview" class="preview-section">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">LIVE PREVIEW</div>
-          <h2>Type something.</h2>
+      <div class="container">
+        <p class="hero-kicker reveal">A typeface by Mohd Umar Butt</p>
+        <h1 class="hero-title reveal">
+          <span class="hero-script hand">Umar Butt</span>
+          <span class="hero-word">Handwriting</span>
+        </h1>
+        <p class="hero-lede reveal">
+          A warm, personal handwriting typeface — free for personal &amp; commercial use under the
+          SIL Open Font License. Optimized <strong>WOFF2</strong> for the web, <strong>TTF</strong> for desktop,
+          delivered worldwide through <strong>jsDelivr</strong>.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="fonts/UmarButtHandwriting-Regular.ttf" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download the font
+          </a>
+          <a class="btn btn-ghost" href="#tester">
+            <svg class="icon" aria-hidden="true"><use href="#i-type"/></svg> Try it live
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub
+          </a>
         </div>
-        <button id="copyCss" class="text-btn">Copy CSS</button>
-      </div>
+        <div class="hero-meta reveal">
+          <span class="chip">Regular · 400</span>
+          <span class="chip">WOFF2 + TTF</span>
+          <span class="chip">OFL-1.1</span>
+          <span class="chip">v1.0.0</span>
+          <span class="chip status" id="font-status">● Loading font…</span>
+        </div>
 
-      <div class="preview-card">
-        <textarea id="previewText" spellcheck="false">Hello, this is Umar Butt Handwriting.</textarea>
-        <div class="controls">
-          <label>Size <input id="size" type="range" min="24" max="120" value="64" /></label>
-          <output id="sizeValue">64px</output>
-          <button id="reset" class="text-btn">Reset</button>
+        <div class="hero-stage stage-paper reveal">
+          <div class="stage-slate">
+            <span class="slate-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="slate-title mono">LIVE SPECIMEN — UMARBUTTHANDWRITING-REGULAR</span>
+          </div>
+          <p class="hero-phrase hand" id="hero-rotator">Hello, world.</p>
+          <p class="stage-caption">Rendered in your browser with the actual font file — no images.</p>
         </div>
       </div>
     </section>
 
-    <section id="glyphs" class="characters">
-      <div class="eyebrow">CHARACTER SET</div>
-      <h2>See the details.</h2>
-      <div class="glyph-grid" id="glyphGrid"></div>
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track hand">
+        <span>The quick brown fox jumps over the lazy dog · Sphinx of black quartz, judge my vow · Pack my box with five dozen liquor jugs ·&nbsp;</span>
+        <span>The quick brown fox jumps over the lazy dog · Sphinx of black quartz, judge my vow · Pack my box with five dozen liquor jugs ·&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why this font</p>
+          <h2>Made to ship anywhere.</h2>
+          <p class="section-sub">One typeface, every platform — with a license that stays out of your way.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <h3>Free for commercial use</h3>
+            <p>SIL OFL 1.1. Use it in client work, products, apps, print and logos — no fees, no attribution required.</p>
+          </article>
+          <article class="card feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></span>
+            <h3>Web-optimized</h3>
+            <p>Compact WOFF2 with <code class="inline-code">font-display: swap</code> for fast, flicker-free loading in every modern browser.</p>
+          </article>
+          <article class="card feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+            <h3>Global CDN</h3>
+            <p>One line of CSS via jsDelivr. No build step, no hosting headaches — works in any website or application.</p>
+          </article>
+          <article class="card feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></span>
+            <h3>Desktop ready</h3>
+            <p>Install the TTF on Windows, macOS or Linux and use it in Figma, Word, Photoshop and more.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="use" class="use-section">
-      <div>
-        <div class="eyebrow">FOR DEVELOPERS</div>
-        <h2>Put it on your website.</h2>
-        <p>Load the WOFF2 file with <code>@font-face</code>, then use <code>font-family: "Umar Butt Handwriting"</code>.</p>
-      </div>
-      <div class="code-card">
-        <button id="copyCode" class="copy">Copy</button>
-        <pre><code id="code"></code></pre>
+    <!-- ============ LIVE TESTER ============ -->
+    <section class="section" id="tester">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Live preview</p>
+          <h2>Type something. See it in Umar’s hand.</h2>
+          <p class="section-sub">Write your own message, tune the typography, and copy the exact CSS you need.</p>
+        </div>
+
+        <div class="tester card reveal">
+          <div class="tester-controls">
+            <div class="field">
+              <label for="tt-text">Your text</label>
+              <textarea id="tt-text" rows="3" spellcheck="false">The quick brown fox jumps over the lazy dog.</textarea>
+            </div>
+            <div class="chips" role="group" aria-label="Sample texts">
+              <button class="chip-btn" type="button" data-sample="The quick brown fox jumps over the lazy dog.">Pangram</button>
+              <button class="chip-btn" type="button" data-sample="Hello, world!">Hello</button>
+              <button class="chip-btn" type="button" data-sample="Made with love by Umar.">Signature</button>
+              <button class="chip-btn" type="button" data-sample="Happy Birthday to you!">Birthday</button>
+              <button class="chip-btn" type="button" data-sample="0123456789">Numbers</button>
+              <button class="chip-btn" type="button" data-sample="Dream big. Start small. Ship fast.">Motto</button>
+            </div>
+            <div class="control">
+              <div class="control-top"><label for="tt-size">Font size</label><output id="tt-size-val">64px</output></div>
+              <input type="range" id="tt-size" min="16" max="160" step="1" value="64">
+            </div>
+            <div class="control">
+              <div class="control-top"><label for="tt-spacing">Letter spacing</label><output id="tt-spacing-val">0px</output></div>
+              <input type="range" id="tt-spacing" min="-2" max="16" step="0.5" value="0">
+            </div>
+            <div class="control">
+              <div class="control-top"><label for="tt-leading">Line height</label><output id="tt-leading-val">1.35</output></div>
+              <input type="range" id="tt-leading" min="1" max="2.4" step="0.05" value="1.35">
+            </div>
+            <div class="control">
+              <div class="control-top"><span>Alignment</span></div>
+              <div class="seg" id="tt-align" role="group" aria-label="Text alignment">
+                <button type="button" data-align="left" class="active" aria-pressed="true">Left</button>
+                <button type="button" data-align="center" aria-pressed="false">Center</button>
+                <button type="button" data-align="right" aria-pressed="false">Right</button>
+              </div>
+            </div>
+            <div class="control">
+              <div class="control-top"><span>Paper</span></div>
+              <div class="seg" id="tt-stage-seg" role="group" aria-label="Preview background">
+                <button type="button" data-stage="paper" class="active" aria-pressed="true">Paper</button>
+                <button type="button" data-stage="ink" aria-pressed="false">Midnight</button>
+              </div>
+            </div>
+            <div class="tester-actions">
+              <button class="btn btn-ghost btn-sm" type="button" id="tt-copy-text">
+                <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg> Copy text
+              </button>
+              <button class="btn btn-ghost btn-sm" type="button" id="tt-reset">Reset</button>
+            </div>
+          </div>
+
+          <div class="tester-stage stage-paper" id="tt-stage">
+            <div class="stage-toolbar">
+              <span class="stage-chip mono">Umar Butt Handwriting · Regular</span>
+              <span class="stage-chip mono" id="tt-readout">64px / 1.35 · 0px</span>
+            </div>
+            <div class="tt-preview hand" id="tt-preview" aria-live="polite">The quick brown fox jumps over the lazy dog.</div>
+          </div>
+
+          <div class="tester-css">
+            <div class="code">
+              <div class="code-head">
+                <span class="code-title">Generated CSS</span>
+                <button class="copy-btn" type="button" data-copy="#tt-css">
+                  <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span>
+                </button>
+              </div>
+              <pre><code id="tt-css"></code></pre>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="about">
-      <div>
-        <div class="eyebrow">ABOUT</div>
-        <h2>Umar Butt Handwriting</h2>
-        <p>Created by <strong>Mohd Umar Butt</strong>. Designed as a practical handwritten display font for digital notes, student work, creative websites and personal projects.</p>
-      </div>
-      <div class="facts">
-        <div><span>Designer</span><strong>Mohd Umar Butt</strong></div>
-        <div><span>Family</span><strong>Umar Butt Handwriting</strong></div>
-        <div><span>Style</span><strong>Regular</strong></div>
-        <div><span>License</span><strong>OFL 1.1</strong></div>
+    <!-- ============ SPECIMEN ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Specimen</p>
+          <h2>Every stroke, up close.</h2>
+        </div>
+        <div class="waterfall card reveal">
+          <div class="wf-row"><span class="wf-size mono">16px</span><span class="wf-text hand" style="font-size:16px">Regular 400 — The quick brown fox jumps over the lazy dog.</span></div>
+          <div class="wf-row"><span class="wf-size mono">24px</span><span class="wf-text hand" style="font-size:24px">The quick brown fox jumps over the lazy dog.</span></div>
+          <div class="wf-row"><span class="wf-size mono">32px</span><span class="wf-text hand" style="font-size:clamp(22px,4vw,32px)">Sphinx of black quartz, judge my vow.</span></div>
+          <div class="wf-row"><span class="wf-size mono">48px</span><span class="wf-text hand" style="font-size:clamp(28px,5.5vw,48px)">Pack my box with five dozen liquor jugs.</span></div>
+          <div class="wf-row"><span class="wf-size mono">64px</span><span class="wf-text hand" style="font-size:clamp(34px,7vw,64px)">Handwritten, with heart.</span></div>
+          <div class="wf-row"><span class="wf-size mono">96px</span><span class="wf-text hand" style="font-size:clamp(48px,10vw,96px)">Aa Bb Cc</span></div>
+        </div>
+        <p class="hint reveal">Click any glyph to add it to the live preview above.</p>
+        <div class="glyphs reveal" id="glyph-grid" aria-label="Character map"></div>
       </div>
     </section>
+
+    <!-- ============ CDN QUICK START ============ -->
+    <section class="section" id="cdn">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Quick start</p>
+          <h2>Live in one line.</h2>
+          <p class="section-sub">Free for websites, apps and commercial products — served by jsDelivr’s global CDN.</p>
+        </div>
+        <div class="grid-2">
+          <div class="code reveal">
+            <div class="code-head">
+              <span class="code-title">Option A — CDN stylesheet (easiest)</span>
+              <button class="copy-btn" type="button" data-copy="#cdn-link-code"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+            </div>
+            <pre><code id="cdn-link-code">&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/css/umar-butt-handwriting.css"&gt;</code></pre>
+          </div>
+          <div class="code reveal">
+            <div class="code-head">
+              <span class="code-title">Option B — raw @font-face</span>
+              <button class="copy-btn" type="button" data-copy="#cdn-face-code"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+            </div>
+            <pre><code id="cdn-face-code">@font-face {
+  font-family: "Umar Butt Handwriting";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.ttf") format("truetype");
+}</code></pre>
+          </div>
+        </div>
+        <div class="code reveal" style="margin-top:20px">
+          <div class="code-head">
+            <span class="code-title">Then use it anywhere</span>
+            <button class="copy-btn" type="button" data-copy="#cdn-use-code"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+          </div>
+          <pre><code id="cdn-use-code">/* CSS */
+.handwriting {
+  font-family: "Umar Butt Handwriting", cursive;
+}
+
+&lt;!-- HTML — or use the ready-made helper class from Option A --&gt;
+&lt;h1 class="handwriting"&gt;Hello, world!&lt;/h1&gt;
+&lt;p class="ub-handwriting"&gt;Made with love by Umar.&lt;/p&gt;</code></pre>
+        </div>
+        <p class="hint reveal">Production tip: pin a release tag instead of <code class="inline-code">@main</code> (e.g. <code class="inline-code">@v1.0.0</code>). Full guide in the <a href="docs.html">documentation</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOADS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Get the font</p>
+          <h2>Download or hotlink — your call.</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card download-card reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+            <h3>Web · WOFF2</h3>
+            <p>For websites &amp; applications. Smallest size, fastest load.</p>
+            <p class="file-meta mono">fonts/UmarButtHandwriting-Regular.woff2</p>
+            <a class="btn btn-primary" href="fonts/UmarButtHandwriting-Regular.woff2" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download .woff2</a>
+            <button class="btn btn-ghost btn-sm" type="button" data-copy-text="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.woff2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy CDN link</span></button>
+          </article>
+          <article class="card download-card reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-type"/></svg></span>
+            <h3>Desktop · TTF</h3>
+            <p>For Windows, macOS, Linux, Figma, Word &amp; design tools.</p>
+            <p class="file-meta mono">fonts/UmarButtHandwriting-Regular.ttf</p>
+            <a class="btn btn-primary" href="fonts/UmarButtHandwriting-Regular.ttf" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download .ttf</a>
+            <a class="btn btn-ghost btn-sm" href="docs.html#desktop">Install guide</a>
+          </article>
+          <article class="card download-card reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
+            <h3>Full source</h3>
+            <p>Fork it, study it, contribute. Everything is open.</p>
+            <p class="file-meta mono">mohdumarbutt/umar-butt-handwriting</p>
+            <a class="btn btn-primary" href="https://github.com/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg> Open repository</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/mohdumarbutt/umar-butt-handwriting/releases" target="_blank" rel="noopener">Releases</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LICENSE BAND ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="band reveal">
+          <div>
+            <p class="eyebrow">Open by design</p>
+            <h2>Yours to use. Yours to build with.</h2>
+            <p class="muted">Personal projects, client work, SaaS products, packaging, print — all permitted under the SIL Open Font License 1.1. The only rule: don’t sell the font by itself.</p>
+          </div>
+          <div class="band-actions">
+            <a class="btn btn-primary" href="license.html">Read the license <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEVELOPER TEASER ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="card dev-teaser reveal">
+          <img class="dev-photo" src="https://i.ibb.co/fYy6FcL0/my-profile-pic.png" alt="Portrait of Mohd Umar Butt" width="96" height="96" loading="lazy" decoding="async">
+          <div class="dev-info">
+            <p class="eyebrow">The hand behind the font</p>
+            <h2>Crafted by Mohd Umar Butt</h2>
+            <p class="muted">Full-stack web/app developer skilled in Python, JS, C++, HTML/CSS. Building scalable apps from frontend to backend — passionate about innovative tech &amp; AI.</p>
+            <div class="band-actions">
+              <a class="btn btn-ghost" href="developer.html">Meet the developer <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="icon-btn" href="https://github.com/mohdumarbutt" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPPORT BAND ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="band center reveal">
+          <div>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Keep it growing</p>
+            <h2>Love the font? Fuel the next style.</h2>
+            <p class="muted">Umar Butt Handwriting is free forever. Sponsoring helps fund new weights, italics and extended glyph coverage.</p>
+          </div>
+          <div class="band-actions">
+            <a class="btn btn-primary" href="https://github.com/sponsors/mohdumarbutt" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Sponsor on GitHub</a>
+            <a class="btn btn-ghost" href="https://buymeacoffee.com/umarbutt" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg> Buy me a coffee</a>
+            <a class="btn btn-ghost" href="support.html">More ways</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <span>© 2026 Mohd Umar Butt</span>
-    <a href="./OFL-1.1-LICENSE.txt">License</a>
-    <a href="./README.md">Documentation</a>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-script hand">Umar Butt Handwriting</p>
+        <p class="muted">A free handwriting typeface by Mohd Umar Butt. Open-source under SIL OFL 1.1 — for websites, apps, print &amp; everything in between.</p>
+        <div class="socials">
+          <a class="icon-btn" href="https://github.com/mohdumarbutt" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="icon-btn" href="https://www.instagram.com/theumar_3x" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a class="icon-btn" href="https://www.facebook.com/MohdUmarButtOfficial" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/mohdumarbutt" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="icon-btn" href="https://www.youtube.com/@mohdumarbutt_official" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+          <a class="icon-btn" href="https://orcid.org/0009-0005-4495-314X" target="_blank" rel="noopener" aria-label="ORCID"><svg class="icon" aria-hidden="true"><use href="#i-orcid"/></svg></a>
+          <a class="icon-btn" href="https://buymeacoffee.com/umarbutt" target="_blank" rel="noopener" aria-label="Buy me a coffee"><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Project">
+        <h4>Project</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the font</a>
+        <a href="docs.html">Documentation</a>
+        <a href="license.html">License</a>
+      </nav>
+      <nav class="footer-col" aria-label="Resources">
+        <h4>Resources</h4>
+        <a href="https://github.com/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener">GitHub repository</a>
+        <a href="https://www.jsdelivr.com/package/gh/mohdumarbutt/umar-butt-handwriting" target="_blank" rel="noopener">jsDelivr package</a>
+        <a href="https://github.com/mohdumarbutt/umar-butt-handwriting/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/mohdumarbutt/umar-butt-handwriting/issues" target="_blank" rel="noopener">Report an issue</a>
+      </nav>
+      <nav class="footer-col" aria-label="Connect">
+        <h4>Connect</h4>
+        <a href="developer.html">Developer</a>
+        <a href="support.html">Support the project</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="https://buymeacoffee.com/umarbutt" target="_blank" rel="noopener">Buy me a coffee</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Mohd Umar Butt · Released under <a href="license.html">SIL OFL 1.1</a></span>
+      <span class="muted">Crafted with care · Deployed on GitHub Pages</span>
+    </div>
   </footer>
 
-  <div id="toast" role="status" aria-live="polite"></div>
-  <script src="./js/app.js"></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

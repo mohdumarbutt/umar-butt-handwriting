@@ -1,0 +1,26 @@
+/*!
+ * Umar Butt Handwriting v1.0.0
+ * Copyright (c) 2026 Mohd Umar Butt (https://github.com/mohdumarbutt)
+ * Licensed under SIL Open Font License 1.1 — free for personal & commercial use.
+ * https://github.com/mohdumarbutt/umar-butt-handwriting
+ *
+ * Usage:
+ * <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/css/umar-butt-handwriting.css">
+ * Then: font-family: "Umar Butt Handwriting", cursive;  (or class="ub-handwriting")
+ */
+
+@font-face {
+  font-family: "Umar Butt Handwriting";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/mohdumarbutt/umar-butt-handwriting@main/fonts/UmarButtHandwriting-Regular.ttf") format("truetype");
+}
+
+.ub-handwriting,
+.umar-butt-handwriting {
+  font-family: "Umar Butt Handwriting", "Segoe Script", "Bradley Hand", cursive;
+  font-weight: 400;
+  font-synthesis: none;
+}

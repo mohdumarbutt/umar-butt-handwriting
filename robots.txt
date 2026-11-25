@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohdumarbutt.github.io/umar-butt-handwriting/sitemap.xml
